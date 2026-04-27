@@ -1,84 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Media Table and List</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 400px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-
-    thead {
-      background-color: #f2f2f2;
-    }
-
-    h2 {
-      margin-top: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Semantic Tables and Media</title>
 </head>
-
 <body>
 
-  <!-- TABLE -->
-  <table>
+    <!-- ================= TABLE ================= -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ritesh</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Suresh</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mahesh</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <thead>
-      <tr>
-        <th>Roll Number</th>
-        <th>Name</th>
-      </tr>
-    </thead>
+    <!-- ================= HEADING ================= -->
+    <h2>List of medias</h2>
 
-    <tbody>
-      <tr><td>1</td><td>Aman</td></tr>
-      <tr><td>2</td><td>Riya</td></tr>
-      <tr><td>3</td><td>John</td></tr>
-    </tbody>
+    <!-- ================= ORDERED LIST ================= -->
+    <ol>
+        <!-- Image -->
+        <li>
+            <img src="https://picsum.photos/id/123/200/300" alt="Sample Image">
+        </li>
 
-  </table>
+        <!-- Video -->
+        <li>
+            <video width="320" height="240" controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
 
-  <!-- HEADING -->
-  <h2>List of medias</h2>
-
-  <!-- LIST -->
-  <ol>
-
-    <!-- IMAGE -->
-    <li>
-      <img src="https://picsum.photos/id/123/200/300" alt="Random Image">
-    </li>
-
-    <!-- VIDEO (FIXED) -->
-    <li>
-      <video controls>
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-      </video>
-    </li>
-
-    <!-- AUDIO (FIXED) -->
-    <li>
-      <audio controls>
-        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-      </audio>
-    </li>
-
-  </ol>
+        <!-- Audio -->
+        <li>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+    </ol>
 
 </body>
-
 </html>
